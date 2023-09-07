@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertically centers the logo and navigation bar */
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #logoi {
+    flex: 1; /* Takes up the remaining available space */
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    gap: 125px; /* Adds some space between the navigation links */
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+
+  .a2{
+    background-color:rgb(110, 110, 226);
+    border-style: solid;
+    border-color:rgb(110, 110, 226);
+    padding: 8px 25px;
+    border-radius: 4px;
+  }
+
+  .right{
+    text-align: end;
+    display: inline;
+  }
+  .left{
+    padding-right: 760px;
+    display: inline-block;
+  }
+
+  #topbar{
+    background-color:rgb(110, 110, 226);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box {
+    margin-top: 100px;
+    flex: 1;
+    height: 350px;
+    background-color: #f0f0f0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+  }
+
+  #content-box1{
+    background-image: url("white-onion-flakes-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #content-box2{
+    background-image: url("redonion.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  #content-box3{
+    background-image: url("whiteonion.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  #content-box4{
+    background-image: url("white-onion-chopped.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #content-box4:hover{
+    position: relative;
+    background-image:url("svlogo.jpg"); 
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100px;
+    padding-top: 50%;
+    
+
+  }
+
+  .Container2{
+   
+    display: flex;
+
+  }
+
+  .Box{
+    
+    flex: 1;
+    height: 350px;
+    background-color: #f0f0f0;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 25px;
+
+  }
+
+
+  .footer1{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color:rgb(110, 110, 226);
+    
+  }
+  
+  

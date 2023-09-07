@@ -1,0 +1,258 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Vertically centers the logo and navigation bar */
+  background-color: black;
+  color: #fff;
+  padding: 0px;
+}
+
+#logoi {
+  flex: 1; /* Takes up the remaining available space */
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  gap: 125px; /* Adds some space between the navigation links */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.a2{
+  background-color:rgb(110, 110, 226);
+  border-style: solid;
+  border-color:rgb(110, 110, 226);
+  padding: 8px 25px;
+  border-radius: 4px;
+}
+
+.right{
+  text-align: end;
+  display: inline;
+}
+.left{
+  padding-right: 760px;
+  display: inline-block;
+}
+
+#topbar{
+  background-color:rgb(110, 110, 226);
+}
+
+.about0-selection {
+  text-align: center;
+  
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.banner-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.banner-content a:hover {
+  background-color: #f57c00;
+}
+
+
+main {
+  
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-section{
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-section, .team-section {
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+  transition: opacity 0.3s, height 0.3s;
+  cursor: pointer;
+}
+
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.team-member
+{
+  display: inline-block; /* Display elements inline */
+  width: start; /* Equal width for 3 elements with spacing */
+  margin: 10px; /* Add spacing between elements */
+  
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.team-member {
+
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.team-member img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+#m2{
+  margin-left: 25%;
+}
+
+#m3{
+  margin-left: 25%;
+}
+
+.main-section {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-brochure{
+  position: relative;
+  border-radius: 20px;
+  border-style: dashed;
+  margin: 0 20px;
+  height: 75px;
+  text-align: center;
+  background-color: brown;
+  
+}
+.download-brochure a {
+  
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 60%;
+  margin-top: 19px;
+}
+.download-brochure h2{
+  position: absolute;
+  top: 50%;
+  color: red;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.download-brochure h2, .download-brochure a{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.download-brochure a:hover {
+  background-color: #f57c00;
+}
+
+.info {
+  display: flex;
+  background-color: #333;
+}
+
+.what-we-are,
+.product-list,
+.contact {
+  flex: 1;
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+.product-list ul {
+  list-style:inside;
+  padding: 0;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px; /* Adjust the padding */
+  color:white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-media a img {
+  width: 20px; /* Adjust the image width */
+  height: auto; /* Automatically adjust the height */
+  vertical-align: middle; /* Align the image vertically */
+  margin-right: 5px; /* Adjust spacing between image and text */
+}
+
+span{
+  color: aqua;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}

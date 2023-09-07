@@ -1,0 +1,355 @@
+/* Reset some default styles for the navbar */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: #ccc;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the transparent navbar */
+.navbar1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with some opacity */
+    position: fixed; /* Fixed position to stay on top */
+    width: 100%; /* Full width */
+    z-index: 2; /* Ensure the navbar is above other content */
+}
+
+.navbar1 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the header */
+.header {
+    background-image: url('ME.jpg'); /* Set your header background image */
+    background-size: 468px; /* Ensure the image covers the entire header */
+    background-position:left; /* Center the image within the header */
+    background-color:black;
+    text-align: right; 
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: white;
+    z-index: 1; /* Ensure the header is below the navbar */
+}
+
+.header h1{
+    margin-right: 60px;
+}
+
+/* Make the header background image responsive */
+@media (max-width: 768px) {
+    /* Adjust background image for smaller screens (e.g., tablets) */
+    .header {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust background image for smaller screens (e.g., mobile devices) */
+    .header {
+        background-size: contain;
+    }
+}
+
+
+/* Style the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the About Us section */
+
+#aboutus h2{
+    text-align: center;
+}
+.aboutus-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutus-box {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+     /* Add borders to separate the boxes */
+    /* border-radius: 10px; */
+}
+
+.aboutus-box img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.aboutus-box p {
+    font-weight:normal;
+    font-family:'Teko','Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.aboutus-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: lighter    ;
+
+}
+
+.divider {
+    border-left: 1px solid #ccc;
+    height: 400px; /* Adjust the height of the line as needed */
+    margin: 0 20px; /* Add margin to space the line between the boxes */
+}
+
+/* Adjust styles for smaller screens as needed */
+@media (max-width: 768px) {
+    .aboutus-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutus-box {
+        width: 100%; /* Make boxes full width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between the boxes */
+    }
+}
+
+
+/* Style the Product Section */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px; /* Adjust the maximum width for responsiveness */
+    margin: 0 auto; /* Center the product containers */
+}
+
+.product {
+    flex: 1;
+    display: flex;
+    flex-direction: raw;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden; /* Hide overflow for button transition */
+    position: relative; /* Position relative for button placement */
+}
+
+
+
+#products h2{
+    text-align: center;
+    
+    /* background-color: #fff; Set a background color for better readability */
+    padding: 10px 20px; /* Add some padding for spacing inside the h2 */
+    font-size: 24px;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.product-image:hover img {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.product-button a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: rgba(0, 123, 255, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Initially, make the button invisible */
+}
+
+/* Style the Contact Us Section */
+/*
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#contactus{
+    text-align: center;
+}
+
+.contact-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.contact-text {
+    text-align: left;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 300px; 
+}
+
+.media-content {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-divider {
+        width: 2px;
+        height: auto;
+        margin: 0 20px;
+    }
+} */
+/* ------------------------------------- */
+.contact{
+    background-color: #141212;
+}
+.contact .info-box {
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+    padding: 20px 0 30px 0;
+  }
+  
+  .contact .info-box i {
+    font-size: 32px;
+    color: #138EE0;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #c5ebec;
+  }
+  
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  
+
+  #contactus{
+    text-align: center;
+  }
+  
+ 
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+/* ------------------------------------- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
