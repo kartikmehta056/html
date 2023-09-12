@@ -18,6 +18,9 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Link to your CSS file -->
     <title>Maruti Enterprise</title>
   </head>
@@ -36,7 +39,7 @@
         </li>
 
         <li><a href="#contactus">Contact Us</a></li>
-        <li><a href="googleform">Google Form</a></li>
+        <li><a href="#inquiry">Inquiry</a></li>
       </ul>
     </nav>
 
@@ -71,7 +74,7 @@
 
     <div class="product-container">
         <!-- Product: Dehydrated Garlic -->
-        <div class="product garlic">
+        <div class="product garlic" id="garlic1">
             <div class="product-description">
                 <br><br>
                 <h3>Dehydrated Garlic</h3>
@@ -98,11 +101,11 @@
         <div class="aboutus-box">
           <div class="cofounder-info">
             <img src="JJ.jpeg" alt="Co-founder Photo" />
-            <h3>Co-Founder</h3>
+            <h3>CEO</h3>
             <h3>Jayveer Jadeja</h3>
             <p>
-              Meet Jayveer, our dedicated co-founder who brings a wealth of
-              experience to our team. With a passion for quality and a keen eye
+              Meet Jayveer, who brings a wealth of
+              experience to company. With a passion for quality and a keen eye
               for the dehydrated food industry, Jayveer has been at the
               forefront of our business for the past four years. Based in the
               vibrant town of Mahuva, he has built strong relationships and
@@ -254,6 +257,13 @@
   
         </div>
       </section><!-- End Contact Section -->
+      <br>
+      <h2 id="inq">Inquiry</h2>
+      <section id="inquiry" class="google-form-section">
+        
+        <!-- Embed the Google Form here -->
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9n1ewMHZ1Cp6OEK3LTmrmaS-VXLot1vNO1utzcvtc2xlzgA/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
 
 <footer>
     &copy; 2023 Maruti Enterprise. All rights reserved.
@@ -287,6 +297,18 @@
                 }
             });
         });
+
+        var load = 0;
+
+document.getElementById('gform').onload = function(){
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        document.location = "http://marutienterprise.org/";
+    }
+}
+
     </script>
     
     
